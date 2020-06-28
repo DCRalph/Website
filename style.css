@@ -3,7 +3,7 @@ body{
   margin: 0;
   padding: 0;
   font-family:"Nunito Sans";
-  background: #ffffff;
+  background: #aaaaaa;
 }
 
 .bar{
@@ -22,7 +22,6 @@ body{
   padding: 10px;
   font-size: 30px;
   color: white;
-  transition: 0.5s
 }
 
 .box{
@@ -30,7 +29,6 @@ body{
   position: absolute;
   top: 100px;
   left: 10%;
-  color: white;
   padding: 10px;
   background: #191919;
   text-align: center;
@@ -41,6 +39,12 @@ body{
 .box h1{
   margin: auto;
   font-size: 25px;
+  color: white;
+  font-weight: 500;
+}
+.box h2{
+  margin: auto;
+  font-size: 20px;
   color: white;
   font-weight: 500;
 }
@@ -69,11 +73,13 @@ body{
   box-shadow: 0 0 15px;
 }
 .fotter h1{
+  margin: auto;
   font-size: 20px;
   color: white;
   font-weight: 500;
 }
 .fotter h2{
+  margin: auto;
   font-size: 15px;
   color: white;
   font-weight: 500;
