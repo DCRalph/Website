@@ -69,18 +69,19 @@ body{
   bottom: -15%;
   background: #191919;
   text-align: center;
-  padding: 10px;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 0 15px;
 }
 .fotter h1{
   margin: auto;
+  padding: 10px;
   font-size: 20px;
   color: white;
   font-weight: 500;
 }
 .fotter h2{
   margin: auto;
+  padding: 10px;
   font-size: 15px;
   color: white;
   font-weight: 500;
