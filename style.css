@@ -4,7 +4,6 @@ body{
   padding: 0;
   font-family:"Nunito Sans";
   background: #aaaaaa;
-
 }
 
 .bar{
@@ -86,3 +85,27 @@ body{
   color: white;
   font-weight: 500;
 }
+
+.container {
+  background: #aaaaaa;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  }
+
+  .container a{
+    display: block;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: 0.2s
+  }
+  .container a:hover{
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--green);
+    transition: 0.2s
+  }
