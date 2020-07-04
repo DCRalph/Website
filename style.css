@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+:root {
+  --white: #fff;
+  --green: #6CC04A;
+  --red: #C51A4A;
+  --background: #181818;
+}
+
 body{
   margin: 0;
   padding: 0;
   font-family:"Nunito Sans";
-  background: #181818;
+  background: var(--background);
 }
 
 .bar{
   width: 100%;
-  position: absolute;
+  position: fixed;
   height: auto;
-
-  background: #C51A4A;
+  z-index: 1;
+  background: var(--red);
   text-align: center;
 
   border-radius: 0 0 20px 20px;
@@ -59,6 +67,9 @@ body{
   width: auto;
   border-radius: 20px;
 }
+.box hr{
+  color:
+}
 
 
 .fotter{
@@ -66,7 +77,7 @@ body{
   position: absolute;
   height: 15%;
   bottom: -15%;
-  background: #C51A4A;
+  background: var(--red);
   text-align: center;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 0 15px;
@@ -86,8 +97,10 @@ body{
   font-weight: 500;
 }
 
+
+
 .container {
-  background: #aaaaaa;
+  background: var(--background);
   top: 55%;
   left: 50%;
   transform: translate(-50%,-50%);
