@@ -31,6 +31,13 @@ body{
   padding: 10px;
   font-size: 30px;
   color: white;
+  width: 350px;
+  transition: .2s
+}
+.bar h1:hover{
+  color: var(--red);
+  text-decoration: none;
+  transition: 1s
 }
 
 .box{
@@ -69,15 +76,15 @@ body{
   border-radius: 20px;
 }
 .box hr{
-  color:
+  color: red;
 }
 
 
 .fotter{
   width: 100%;
   position: absolute;
-  height: 15%;
-  bottom: -15%;
+  height: auto;
+  bottom: 0;
   background: var(--red);
   text-align: center;
   border-radius: 20px 20px 0 0;
