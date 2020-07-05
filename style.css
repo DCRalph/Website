@@ -1,133 +1,135 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
-:root {
-  --white: #fff;
-  --green: #6CC04A;
-  --red: #C51A4A;
-  --background: #181818;
-  --space_man: #fff;
-}
-
-body{
-  margin: 0;
-  padding: 0;
-  font-family:"Nunito Sans";
-  background: var(--background);
-}
-
-.bar{
-  width: 100%;
-  position: fixed;
-  height: auto;
-  z-index: 1;
-  background: var(--red);
-  text-align: center;
-
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 0 15px;
-}
-.bar h1{
-  margin: auto;
-  padding: 10px;
-  font-size: 30px;
-  color: white;
-  width: 350px;
-  transition: .2s
-}
-.bar h1:hover{
-  color: var(--red);
-  text-decoration: none;
-  transition: 1s
-}
-
-.box{
-  width: 80%;
-  position: absolute;
-  top: 100px;
-  left: 10%;
-  padding: 10px;
-  background: #202020;
-  text-align: center;
-
-  border-radius: 20px;
-  box-shadow: 0 0 15px;
-}
-.box h1{
-  margin: auto;
-  font-size: 25px;
-  color: white;
-  font-weight: 500;
-}
-.box h2{
-  margin: auto;
-  font-size: 20px;
-  color: white;
-  font-weight: 500;
-}
-.box p{
-  margin: auto;
-  font-size: 15px;
-  color: white;
-  font-weight: 500;
-}
-.box img{
-  max-height: 400px;
-  width: auto;
-  border-radius: 20px;
-}
-.box hr{
-  color: red;
-}
-
-
-.fotter{
-  width: 100%;
-  position: absolute;
-  height: auto;
-  bottom: 0;
-  background: var(--red);
-  text-align: center;
-  border-radius: 20px 20px 0 0;
-  box-shadow: 0 0 15px;
-}
-.fotter h1{
-  margin: auto;
-  padding: 10px;
-  font-size: 20px;
-  color: white;
-  font-weight: 500;
-}
-.fotter h2{
-  margin: auto;
-  padding: 10px;
-  font-size: 15px;
-  color: white;
-  font-weight: 500;
-}
-
-
-
-.container {
-  background: var(--background);
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  position: absolute;
-  color: #fff;
+  :root {
+    --white: #fff;
+    --green: #6CC04A;
+    --red: #C51A4A;
+    --background: #181818;
+    --space_man: #fff;
   }
 
-  .container a{
-    display: block;
-    font-size: 1.75em;
-    font-weight: bold;
+  html,
+  body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family:"Nunito Sans";
+    background: var(--background);
+  }
+  #main {
+    min-height:100%;
+    position:relative;
+  }
+  #header {
+    width: 100%;
+    height: 65px;
+  }
+  #body {
+    color: var(--white);
+    padding-bottom:120px;	/* Height of the footer */
+
+    text-align: center;
+  }
+  #body img{
+    max-height: 400px;
+    width: auto;
+    border-radius: 20px;
+  }
+  #body a{
     text-decoration: none;
     color: inherit;
     text-align: center;
     transition: 0.2s
   }
-  .container a:hover{
+  #body a:hover{
+    cursor: pointer;
     text-decoration: none;
-    font-size: 2em;
     color: var(--red);
     transition: 0.2s
   }
+  #footer2 {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;			/* Height of the footer */
+
+  }
+
+
+  .bar{
+    width: 100%;
+    position: fixed;
+    height: 65px;
+    z-index: 1;
+    background: var(--red);
+    text-align: center;
+
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 15px;
+  }
+  .bar h1{
+    margin: auto;
+    padding: 10px;
+    font-size: 33px;
+    color: white;
+    width: 400px;
+    transition: .2s
+  }
+  .bar h1:hover{
+    color: var(--red);
+    text-decoration: none;
+    transition: 5s
+  }
+  .content {
+    
+  }
+
+  .footer {
+    position:absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background: var(--red);
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 15px;
+  }
+  .footer h1{
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+  }
+  .footer h2{
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+  }
+
+  .container {
+    background: var(--background);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: #fff;
+    }
+
+    .container a{
+      display: block;
+      font-size: 1.75em;
+      font-weight: bold;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      transition: 0.2s
+    }
+    .container a:hover{
+      text-decoration: none;
+      font-size: 2em;
+      color: var(--red);
+      transition: 0.2s
+    }
