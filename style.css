@@ -72,7 +72,7 @@
     padding: 10px;
     font-size: 33px;
     color: white;
-    width: 400px;
+    width: 500px;
     transition: .2s
   }
   .bar h1:hover{
@@ -81,7 +81,7 @@
     transition: 5s
   }
   .content {
-    
+
   }
 
   .footer {
