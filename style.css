@@ -28,6 +28,8 @@
     color: var(--white);
     padding-bottom:120px;	/* Height of the footer */
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   #body h1{
     font-size: 30px;
