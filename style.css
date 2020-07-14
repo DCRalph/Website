@@ -27,11 +27,25 @@
   #body {
     color: var(--white);
     padding-bottom:120px;	/* Height of the footer */
-
     text-align: center;
   }
+  #body h1{
+    font-size: 30px;
+    color: inherit;
+    transition: .2s
+  }
+  #body h2{
+    font-size: 25px;
+    color: inherit;
+    transition: .2s
+  }
+  #body p{
+    padding: 10px;
+    font-size: 20px;
+    color: inherit;
+    transition: .2s
+  }
   #body img{
-    max-height: 400px;
     width: auto;
     border-radius: 20px;
   }
