@@ -5,8 +5,9 @@
     <title>William's Site | About</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="hamburger.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
-  <body>
+  <body onload="ready()">
 
     <div id="main">
       <div id="header">
@@ -39,6 +40,28 @@
         <p>So instead look at this photo.</p><br>
         <img src="media/tea.PNG" alt="Tea" style="max-height: 500px;">
 
+        <br><br>
+
+        <h1>How old am I.</h1>
+        <div class="age">
+          <div id="year"   >Loading...</div>
+      		<div id="month"  >Loading...</div>
+      		<div id="week"   >Loading...</div>
+      		<div id="day"    >Loading...</div>
+      		<div id="hour"   >Loading...</div>
+      		<div id="minute" >Loading...</div>
+      		<div id="second" >Loading...</div>
+        </div>
+        <div class="age">
+          <div id="year2"  >Loading...</div>
+      		<div id="month2" >Loading...</div>
+      		<div id="week2"  >Loading...</div>
+      		<div id="day2"   >Loading...</div>
+      		<div id="hour2"  >Loading...</div>
+      		<div id="minute2">Loading...</div>
+      		<div id="second2">Loading...</div>
+        </div>
+
         <!-- Body end -->
       </div>
       <div id="footer2">
@@ -46,11 +69,79 @@
         <div class="footer">
           <h1>William Giles</h1>
           <h2>Copyright William Giles 2020</h2>
+
+          <label class="switch">
+            <h1>Dark Mode</h1>
+            <input id="dark-mode" type="checkbox">
+            <span class="slider round"></span>
+          </label>
       </div>
     <!-- Footer end -->
       </div>
     </div>
 
     <script  src="./script.js"></script>
+    <script type="text/javascript">
+
+    function ready() {
+  			var birth = new Date("03/11/2005 23:31:40");
+  			var now = new Date();
+  			var diff = Math.round((now.getTime() - birth.getTime()) / 1000);
+  			setInterval(function() {
+  				calcYear(diff);
+  				calcMonth(diff);
+  				calcWeek(diff);
+  				calcDay(diff);
+  				calcHour(diff);
+  				calcMinute(diff);
+  				calcSecond(diff);
+
+/*
+          calcYear2(diff);
+          calcMonth2(diff);
+          calcWeek2(diff);
+          calcDay2(diff);
+          calcHour2(diff);
+          calcMinute2(diff);
+          calcSecond2(diff);
+*/
+
+  				diff++;
+  			}, 1000);
+
+  		}
+
+  		function calcYear(diff) {
+  			$("#year").html(Math.floor(diff / (60 * 60 * 24 * 365.25)) + " Years");
+  		}
+
+  		function calcMonth(diff) {
+  			$("#month").html(Math.floor(diff / (60 * 60 * 24 * 30)) + " Months");
+  		}
+
+  		function calcWeek(diff) {
+  			$("#week").html(Math.floor(diff / (60 * 60 * 24 * 7)) + " Weeks");
+  		}
+
+  		function calcDay(diff) {
+  			$("#day").html(Math.floor(diff / (60 * 60 * 24)) + " Days");
+  		}
+
+  		function calcHour(diff) {
+  			$("#hour").html(Math.floor(diff / (60 * 60)) + " Hours");
+  		}
+
+  		function calcMinute(diff) {
+  			$("#minute").html(Math.floor(diff / (60)) + " Minutes");
+  		}
+
+  		function calcSecond(diff) {
+  			$("#second").html(Math.floor(diff) + " Seconds");
+  		}
+
+      /*------*/
+
+
+  	</script>
   </body>
 </html>
