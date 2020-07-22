@@ -51,6 +51,10 @@ function checkCookie() {
   } else if(dark == "light"){
     document.documentElement.setAttribute('data-theme', 'light');
     document.getElementById("dark-mode").checked = false;
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById("dark-mode").checked = true;
   }
 }
 checkCookie();
+setCookie("i be watching u", true, 365);
