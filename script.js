@@ -15,7 +15,9 @@ function switchTheme(e) {
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
     setCookie("dark mode", "light", 365);
-    window.alert("Eww Gross. Light Mode");
+    if(getCookie(noAlart) == false){
+      window.alert("Eww Gross. Light Mode");
+    }
   }
 }
 darkmode.addEventListener('change', switchTheme, false);
