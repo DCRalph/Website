@@ -1,165 +1,177 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
-  :root {
-    --secondary: #950740;
-    --primary: #C3073F;
-    --background: #1A1A1D;
-    --space_man: #fff;
-    --font-color: #fff;
-  }
-
-  [data-theme="light"] {
-    --secondary: #950740;
-    --primary: #C3073F;
-    --background: #E5E5E2;
-    --space_man: #fff;
-    --font-color: #000;
+:root {
+  --secondary: #950740;
+  --primary: #C3073F;
+  --background: #1A1A1D;
+  --space_man: #fff;
+  --font-color: #fff;
 }
 
-  html,
-  body {
-    margin:0;
-    padding:0;
-    height: 100%;
-    font-family:"Nunito Sans";
-    background: var(--background);
-  }
-  #main {
-    min-height:100%;
-    position:relative;
-  }
-  #header {
-    width: 100%;
-    height: 65px;
-  }
-  #body {
-    color: var(--font-color);
-    padding-bottom:120px;	/* Height of the footer */
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  #body h1{
-    font-size: 30px;
-    color: inherit;
-    transition: .2s
-  }
-  #body h2{
-    font-size: 25px;
-    color: inherit;
-    transition: .2s
-  }
-  #body p{
-    padding: 10px;
-    font-size: 20px;
-    color: inherit;
-    transition: .2s
-  }
-  #body img{
-    width: auto;
-    border-radius: 20px;
-  }
-  #body a{
-    text-decoration: none;
-    color: var(--primary);
-    text-align: center;
-    transition: 0.2s
-  }
-  #body a:hover{
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--secondary);
-    transition: 0.2s
-  }
-  #footer2 {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:100px;			/* Height of the footer */
+[data-theme="light"] {
+  --secondary: #950740;
+  --primary: #C3073F;
+  --background: #E5E5E2;
+  --space_man: #fff;
+  --font-color: #000;
+}
 
-  }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Nunito Sans";
+  background: var(--background);
+}
 
+#main {
+  min-height: 100%;
+  position: relative;
+}
 
-  .bar{
-    width: 100%;
-    position: fixed;
-    height: 65px;
-    z-index: 1;
-    background: var(--primary);
-    text-align: center;
+#header {
+  width: 100%;
+  height: 65px;
+}
 
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 15px;
-  }
-  .bar h1{
-    margin: auto;
-    padding: 10px;
-    font-size: 33px;
-    color: white;
-    width: 500px;
-    transition: .2s
-  }
-  .bar h1:hover{
-    color: var(--primary);
-    text-decoration: none;
-    transition: 5s
-  }
-  .content {
+#body {
+  color: var(--font-color);
+  padding-bottom: 120px;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
-  }
+#body h1 {
+  font-size: 30px;
+  color: inherit;
+  transition: .2s
+}
 
-  .footer {
-    position:absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-    background: var(--primary);
-    text-align: center;
-    border-radius: 20px 20px 0 0;
-    box-shadow: 0 0 15px;
-  }
-  .footer h1{
-    margin: auto;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-    font-weight: 500;
-  }
-  .footer h2{
-    margin: auto;
-    padding: 10px;
-    font-size: 15px;
-    color: white;
-    font-weight: 500;
-  }
+#body h2 {
+  font-size: 25px;
+  color: inherit;
+  transition: .2s
+}
+
+#body p {
+  padding: 10px;
+  font-size: 20px;
+  color: inherit;
+  transition: .2s
+}
+
+#body img {
+  width: auto;
+  border-radius: 20px;
+}
+
+#body a {
+  text-decoration: none;
+  color: var(--primary);
+  text-align: center;
+  transition: 0.2s
+}
+
+#body a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--secondary);
+  transition: 0.2s
+}
+
+#footer2 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  /* Height of the footer */
+}
+
+.bar {
+  width: 100%;
+  position: fixed;
+  height: 65px;
+  z-index: 1;
+  background: var(--primary);
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 15px;
+}
+
+.bar h1 {
+  margin: auto;
+  padding: 10px;
+  font-size: 33px;
+  color: white;
+  width: 500px;
+  transition: .2s
+}
+
+.bar h1:hover {
+  color: var(--primary);
+  text-decoration: none;
+  transition: 5s
+}
+
+.content {}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: var(--primary);
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 0 15px;
+}
+
+.footer h1 {
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.footer h2 {
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+
 .container {
-    background: var(--background);
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    color: #fff;
+  background: var(--background);
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: #fff;
 }
 
-
-.container a{
-    display: block;
-    font-size: 1.75em;
-    font-weight: bold;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    transition: 0.2s;
-}
-.container a:hover{
-    text-decoration: none;
-    font-size: 2em;
-    color: var(--primary);
-    transition: 0.2s
+.container a {
+  display: block;
+  font-size: 1.75em;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  transition: 0.2s;
 }
 
-.butt a{
-  border:0;
+.container a:hover {
+  text-decoration: none;
+  font-size: 2em;
+  color: var(--primary);
+  transition: 0.2s
+}
+
+.butt a {
+  border: 0;
   background: none;
   display: block;
   margin: 20px auto;
@@ -176,7 +188,8 @@
   font-size: 14px;
   text-decoration: none;
 }
-.butt a:hover{
+
+.butt a:hover {
   background: #2ecc71;
   width: 150px;
   color: black;
@@ -189,15 +202,15 @@
   height: 34px;
   right: 15px;
   bottom: 50%;
-  transform: translate(0,50%);
+  transform: translate(0, 50%);
 }
 
-.switch h1{
+.switch h1 {
   position: absolute;
   width: 100px;
   right: 60px;
   bottom: 50%;
-  transform: translate(0,50%);
+  transform: translate(0, 50%);
 }
 
 .slider {
@@ -226,17 +239,17 @@
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
-.age{
+.age {
   position: relative;
   display: inline-block;
   width: 200px;
